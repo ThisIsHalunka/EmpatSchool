@@ -6,20 +6,20 @@ void main() {
 
 class Person {
   late String _fullName;
-  Person(String fullName) {
+  Person({required String fullName}) {
     _fullName = fullName;
   }
-  String get getFullName {
+  String get fullName {
     return _fullName;
   }
 
-  set setFullName(String fullName) {
+  set fullName(String fullName) {
     _fullName = fullName;
   }
 }
 
 class MyApp extends StatelessWidget {
-  final myself = Person("Bohdan Halunka");
+  final myself = Person(fullName: "Bohdan Halunka");
   MyApp({super.key});
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Text(
-            'Hello ${myself.getFullNamit}',
+            'Hello ${myself.fullName}',
             style: const TextStyle(fontSize: 20),
           ),
         ),
