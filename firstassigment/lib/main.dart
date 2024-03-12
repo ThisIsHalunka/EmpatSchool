@@ -19,7 +19,7 @@ class Person {
 }
 
 class MyApp extends StatelessWidget {
-  final myself = Person(fullName: "Bohdan Halunka");
+  final myself = Person(fullName: "Bohdan Halunka2");
   MyApp({super.key});
   @override
   Widget build(BuildContext context) {
